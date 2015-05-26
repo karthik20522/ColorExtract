@@ -7,10 +7,10 @@
             <pattern>%date{"yyyy-MM-dd'T'HH:mm:ss.SSSZ","UTC"} level=%level logger=%logger{15} %msg%n</pattern>
         </encoder>
     </appender>
-    <logger name="akka" level="info" additivity="true">
+    <logger name="akka" level="error" additivity="true">
     </logger>
-    <logger name="com.ning.http.client.providers.netty" level="info"/>
-    <logger name="com.colorextract" level="info" additivity="true"/>
+    <logger name="com.ning.http.client.providers.netty" level="error"/>
+    <logger name="com.colorextract" level="error" additivity="true"/>
     <root level="info">
         <appender-ref ref="console"/>
     </root>
